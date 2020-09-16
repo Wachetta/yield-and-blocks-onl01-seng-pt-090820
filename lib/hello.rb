@@ -1,4 +1,5 @@
-def hello_t(array) {poop}
+def hello_t(array) {|i| puts i *2}
+
 if block_given?
   i = 0
 
