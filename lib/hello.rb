@@ -1,4 +1,4 @@
-def hello_t(array) {|i| puts i *2}
+def hello_t(array)
 
 if block_given?
   i = 0
@@ -15,3 +15,4 @@ else
 end
 
 # call your method here!
+hello_t(array) {|i| puts i * 2}
