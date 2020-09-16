@@ -1,3 +1,4 @@
+require 'pry'
 def hello_t(array)
 if block_given?
   i = 0
@@ -6,7 +7,7 @@ if block_given?
     yield (array[i])
     i = i + 1
   end
-
+binding.pry
   array
 else
   puts "Hey! No block was given!"
